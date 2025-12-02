@@ -1,7 +1,12 @@
 name: CI
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - '**'    # все ветки
+  pull_request:
+    branches:
+      - '**'    # все ветки
 
 jobs:
   build-and-test:
