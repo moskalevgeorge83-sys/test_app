@@ -1,14 +1,7 @@
 name: CI
 
 on:
-  pull_request:
-    branches:
-      - main
-      - master
-  push:
-    branches:
-      - main
-      - master
+  create:
 
 jobs:
   build-and-test:
@@ -46,3 +39,4 @@ jobs:
 
       - name: Run flake8
         run: flake8 .
+
